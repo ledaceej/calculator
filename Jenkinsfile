@@ -29,7 +29,7 @@ sh "./gradlew build"
 }
 stage("Docker build") {
 steps {
-sh "docker build -t ledaceej/calculator ."
+sh "docker build -t ledaceej/calculator -f Dockerfile ."
 }
 }
 stage("Docker push") {
